@@ -36,6 +36,7 @@
         if ([self respondsToSelector:@selector(edgesForExtendedLayout)]) {
             self.edgesForExtendedLayout = UIRectEdgeNone;
         }
+
         self.title = (title != nil) ? title : NSLocalizedString(@"Note", @"Note");
         _textView = [[UITextView alloc] init];
         _textView.delegate = self;
